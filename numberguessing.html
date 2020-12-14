@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HW-NumberGuessing</title>
+	</head>
+<body>
+	<script>
+	var rand=random();
+	var num;
+	num=window.prompt("Please guess a number from 1~10")
+	while(num!=rand){
+		num=window.prompt("Please guess again.")
+	}
+    if(num==rand){
+    	confirm("Congradulations!")
+    }
+    function random() {
+    			return Math.floor((Math.random()*10)+1);
+    		}
+</script>
+</body>
+</html>
